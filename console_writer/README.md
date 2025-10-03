@@ -1,22 +1,22 @@
-## Function: `write`
+# `write` Function
 
 Prints text to the console character by character, with options to:
 
-- Set a delay between each character (`y`) and between spaces (`z`)
+- Set a delay between each character (`delayCh`) and after spaces (`delayS`)  
 - Apply a color to the text (`color`)
 
 If `color` is `0`, the text prints without color.
 
-### Parameters
+## Parameters
 
-| Parameter | Type          | Description                                                  |
-|-----------|---------------|--------------------------------------------------------------|
-| `x`       | `std::string` | The text to print                                           |
-| `y`       | `int`         | Delay between characters (ms if color is used, µs otherwise) |
-| `z`       | `int`         | Additional delay after spaces (ms if color is used, µs otherwise) |
-| `color`   | `int`         | ANSI color code to use (0 = no color)                        |
+| Parameter | Type | Description                                  |
+|-----------|------|----------------------------------------------|
+| `text`    | string | The text to print                            |
+| `delayCh` | int  | Delay between characters (milliseconds)      |
+| `delayS`  | int  | Additional delay after spaces (milliseconds) |
+| `color`   | int  | ANSI color code to use (0 = no color)        |
 
-### ANSI Color Codes
+## ANSI Color Codes
 
 | Color Name     | Code |
 |----------------|------|
@@ -37,7 +37,13 @@ If `color` is `0`, the text prints without color.
 | Bright Cyan    | 96   |
 | Bright White   | 97   |
 
-### Example
+## Example Usage
 
 ```cpp
-write("Hello world!", 50, 100, 32); // Prints green text with delays
+#include "console_writer.h"
+
+int main() {
+    write("Hello world!", 50, 100, 32); // Prints green text with delays
+    write("No color text.", 50, 100, 0); // Prints text without color
+    return 0;
+}
