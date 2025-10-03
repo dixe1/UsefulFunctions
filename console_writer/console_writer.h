@@ -2,4 +2,5 @@
 #include <string>
 #include <iostream>
 
-void write(const std::string& x, int y = 40, int z = 40, int color = 0);
+
+void write(const std::string& text, int delayCh = 40, int delayS = 40, int color = 0);
