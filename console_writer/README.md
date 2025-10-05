@@ -6,6 +6,7 @@ Prints text to the console character by character, with options to:
 - Apply a color to the text (`color`)
 
 If `color` is `0`, the text prints without color.
+If delays are not provided, both default to **20 ms**
 
 ## Parameters
 
@@ -44,6 +45,7 @@ If `color` is `0`, the text prints without color.
 
 int main() {
     write("Hello world!", 50, 100, 32); // Prints green text with delays
-    write("No color text.", 50, 100, 0); // Prints text without color
+    write("No color text.", 50, 100); // Prints text without color
+    write("default"); // Prints text with default settings (20ms delay and standard color)
     return 0;
 }
