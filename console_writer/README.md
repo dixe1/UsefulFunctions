@@ -10,12 +10,13 @@ If delays are not provided, both default to **20 ms**
 
 ## Parameters
 
-| Parameter | Type | Description                                  |
-|-----------|------|----------------------------------------------|
-| `text`    | string | The text to print                            |
-| `delayCh` | int  | Delay between characters (milliseconds)      |
-| `delayS`  | int  | Additional delay after spaces (milliseconds) |
-| `color`   | int  | ANSI color code to use (0 = no color)        |
+| Parameter | Type   | Description                                                       |
+|-----------|--------|-------------------------------------------------------------------|
+| `text`    | string | The text to print                                                 |
+| `delayCh` | int    | Delay between characters (milliseconds)                           |
+| `delayS`  | int    | Additional delay after spaces (milliseconds)                      |
+| `color`   | int    | ANSI color code to use (if not provided, text will be printed without color) |
+
 
 ## ANSI Color Codes
 
