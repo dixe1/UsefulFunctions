@@ -5,7 +5,7 @@ Prints text to the console character by character, with options to:
 - Set a delay between each character (`delayCh`) and after spaces (`delayS`)  
 - Apply a color to the text (`color`)
 
-If color is not provided, the text will be printed without color (using the terminal’s default)
+If color is not provided, the text will be printed without color (using the terminal’s default)␣␣
 If delays are not provided, both default to **20 ms**
 
 ## Parameters
