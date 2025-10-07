@@ -40,13 +40,16 @@ If delays are not provided, both default to **20 ms**
 | Bright White   | 97   |
 
 ## Example Usage
+```
+write(text, color, delayBetweenChars, delayAfterSpace);
+```
 
 ```cpp
 #include "console_writer.h"
 
 int main() {
-    write("Hello world!", 50, 100, 32); // Prints green text with delays
-    write("No color text.", 50, 100); // Prints text without color
+    write("Hello world!", 32, 50, 100); // Prints green text with delays
+    write("No color text.", 0, 50, 100); // Prints text without color
     write("default"); // Prints text with default settings (20ms delay and standard color)
     return 0;
 }
