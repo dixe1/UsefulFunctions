@@ -52,3 +52,6 @@ int main() {
     write("default"); // Prints text with default settings (20ms delay and standard color)
     return 0;
 }
+```
+---
+MIT License © 2025 dixe
