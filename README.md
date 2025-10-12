@@ -5,5 +5,3 @@
 **Functions:**
 
 - `write` – a function for displaying text in the console character by character, with optional delays and color.
----
-MIT License © 2025 dixe
