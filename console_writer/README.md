@@ -53,3 +53,5 @@ int main() {
     return 0;
 }
 ```
+---
+Licensed under MIT License. See the LICENSE file in the root of this repository.
