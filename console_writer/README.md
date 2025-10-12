@@ -53,5 +53,3 @@ int main() {
     return 0;
 }
 ```
----
-MIT License © 2025 dixe
